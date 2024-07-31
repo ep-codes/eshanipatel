@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html>
-
+    <head>
+        <title>Eshani Patel - Homepage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <header>
-            <title>Eshani Patel Homepage</title>
-        </header>
-        <main>
-            <nav>
-                <a href="index.html">Eshani Patel</a>
-                <a href="about.html">About</a>
-                <a href="works.html">Works</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        <p>Welcome!</p><br>
-        <p>Hi! My name is Eshani. Nice to meet you! I'm a computer science undergrad student at Georgia State Unversity and pursuing Cybersecurity. I'm a passionate creative and artistic individual with interests for Graphic Design and UI/UX design. </p>
-        <br>
-        <p>Learn more about me <a href="about.html">HERE!</a></p>
-        </main>
-        <footer>
-           <!--footer information--> 
-        </footer>
+       
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Eshani_Logo_HTML.png" class="logo">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Design</p>
+                    <h1>Hi! My name is Eshani.</h1>
+                </div>
+            </div>
+        </div>
+<!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row"> </div>
+                <div class="about-col-1">
+                    <img src="HTML_Profile.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there. I'm a computer science student at Georgia State University expected to graduate in May 2025. I am pursuing a double minor in Film & Media and Game Design & Development</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Discovery High School</span><br>2016-2020</li>
+                            <li><span>Bachelors of Science in Computer Science</span><br>Georgia State University</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- My Skills -->
+        <div id="myskills">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-links");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        
       </body>
 
 </html>
