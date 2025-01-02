@@ -16,7 +16,7 @@ export function About() {
           </div>
           <div>
             <p className="text-gray-600 mb-6">
-              Hi, I'm Eshani Patel! I'm currently a student at Georgia State University earning a Bachelors in Computer Science, expected to graduated May 2025. In addition to my studies, I'm minoring in Film & Media and Game Design & Development, and obtaining a certificate in Cybersecurity. 
+              Hi, I'm Patel! I'm currently a student at Georgia State University earning a Bachelors in Computer Science, expected to graduated May 2025. In addition to my studies, I'm minoring in Film & Media and Game Design & Development, and obtaining a certificate in Cybersecurity. 
               Outside of my studies, I enjoy playing badminton, drawing and painting, and spending time with loved ones.
             </p>
             <div className="grid grid-cols-2 gap-4">
