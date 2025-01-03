@@ -9,32 +9,33 @@ export function Skills() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Code className="w-8 h-8 text-purple-500 mb-4" />
-            <h3 className="text-xl font-semibold mb-3">Development</h3>
+            <h3 className="text-xl font-semibold mb-3">Programming Languages</h3>
             <ul className="text-gray-600 space-y-2">
-              <li>Frontend Development</li>
-              <li>React & Modern JavaScript</li>
-              <li>Responsive Design</li>
-              <li>UI/UX Principles</li>
+              <li>Python</li>
+              <li>C, C#</li>
+              <li>HTML</li>
+              <li>CSS</li>
             </ul>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Palette className="w-8 h-8 text-purple-500 mb-4" />
-            <h3 className="text-xl font-semibold mb-3">Creative Arts</h3>
+            <h3 className="text-xl font-semibold mb-3">Developer Tools</h3>
             <ul className="text-gray-600 space-y-2">
-              <li>Digital Drawing</li>
-              <li>Arts & Crafts</li>
-              <li>Color Theory</li>
-              <li>Creative Problem Solving</li>
+              <li>VS Code</li>
+              <li>Visual Studio</li>
+              <li>Pycharm</li>
+              <li>Unreal Engine</li>
+              <li>Unity</li>
             </ul>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <BookOpen className="w-8 h-8 text-purple-500 mb-4" />
-            <h3 className="text-xl font-semibold mb-3">Learning</h3>
+            <h3 className="text-xl font-semibold mb-3">Graphic Design Tools</h3>
             <ul className="text-gray-600 space-y-2">
-              <li>Quick Learner</li>
-              <li>Adaptable</li>
-              <li>Problem Solver</li>
-              <li>Detail-Oriented</li>
+              <li>Procreate</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+              <li>Adobe Fresco</li>
             </ul>
           </div>
         </div>
