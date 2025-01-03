@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Palette, BookOpen } from 'lucide-react';
+import { Code, AppWindow, Palette } from 'lucide-react';
 
 export function Skills() {
   return (
@@ -18,7 +18,7 @@ export function Skills() {
             </ul>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <Palette className="w-8 h-8 text-purple-500 mb-4" />
+            <AppWindow className="w-8 h-8 text-purple-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3">Developer Tools</h3>
             <ul className="text-gray-600 space-y-2">
               <li>VS Code</li>
@@ -29,7 +29,7 @@ export function Skills() {
             </ul>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <BookOpen className="w-8 h-8 text-purple-500 mb-4" />
+            <Palette className="w-8 h-8 text-purple-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3">Graphic Design Tools</h3>
             <ul className="text-gray-600 space-y-2">
               <li>Procreate</li>

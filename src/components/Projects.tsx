@@ -3,25 +3,25 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Art Portfolio',
-    description: 'A showcase of digital artwork and illustrations created using various mediums.',
-    tech: ['React', 'Three.js', 'GSAP'],
+    title: 'Cross Media Design Projects',
+    description: 'A compilations of works including a graphic design poster, concept sketing, moodboards, and contact sheets.',
+    tech: ['Photoshop', 'Figma', 'Procreate'],
     image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800',
     github: '#',
     live: '#'
   },
   {
-    title: 'Music Visualizer',
-    description: 'Interactive K-pop music visualizer with real-time animations.',
-    tech: ['WebAudio API', 'Canvas', 'React'],
+    title: 'Ball Obstacle Game',
+    description: 'A 3D Game created in 3rd person view where the player must avoid obstacles to reach the end of the level. Payer control is a ball as the main character.',
+    tech: ['Unity', 'C#', 'Visual Studio'],
     image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800',
     github: '#',
     live: '#'
   },
   {
-    title: 'Game Design Project',
-    description: 'A 2D platformer game featuring original artwork and animations.',
-    tech: ['Unity', 'C#', 'Aseprite'],
+    title: 'First Person Shooter Game',
+    description: 'A 3D shooter game handling weapons and attacking against patrolling enemy AI.',
+    tech: ['Unity', 'C#', 'Visual Studio'],
     image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800',
     github: '#',
     live: '#'
