@@ -1,5 +1,5 @@
 import React from 'react';
-import { Palette, Music, Award, BookOpen } from 'lucide-react';
+import { AppWindow, Palette, Figma, Cloudy } from 'lucide-react';
 
 export function About() {
   return (
@@ -21,20 +21,20 @@ export function About() {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center gap-2">
-                <Music className="w-5 h-5 text-purple-500" />
-                <span>K-pop Enthusiast</span>
+                <AppWindow className="w-5 h-5 text-purple-500" />
+                <span>Software Engineer/Developer</span>
               </div>
               <div className="flex items-center gap-2">
                 <Palette className="w-5 h-5 text-purple-500" />
-                <span>Digital Artist</span>
+                <span>Graphic Design</span>
               </div>
               <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-purple-500" />
-                <span>Badminton Player</span>
+                <Figma className="w-5 h-5 text-purple-500" />
+                <span>UI/UX Design</span>
               </div>
               <div className="flex items-center gap-2">
-                <BookOpen className="w-5 h-5 text-purple-500" />
-                <span>Lifelong Learner</span>
+                <Cloudy className="w-5 h-5 text-purple-500" />
+                <span>Cybersecurity</span>
               </div>
             </div>
           </div>
