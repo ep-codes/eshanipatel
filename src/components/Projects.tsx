@@ -4,7 +4,7 @@ import { Github, ExternalLink } from 'lucide-react';
 const projects = [
   {
     title: 'Cross Media Design Projects',
-    description: 'A compilations of works including a graphic design poster, concept sketing, moodboards, and contact sheets.',
+    description: 'Compilation of works including a graphic design poster, concept sketing, moodboards, and contact sheets.',
     tech: ['Photoshop', 'Figma', 'Procreate'],
     image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800',
     github: '#',
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Ball Obstacle Game',
-    description: 'A 3D Game created in 3rd person view where the player must avoid obstacles to reach the end of the level. Payer control is a ball as the main character.',
+    description: 'A 3D game created in 3rd person view where the player must avoid obstacles to reach the end of the level. Payer control is a ball as the main character.',
     tech: ['Unity', 'C#', 'Visual Studio'],
     image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800',
     github: '#',
