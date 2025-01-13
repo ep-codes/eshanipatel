@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 export function Header() {
   return (
-    <header className="container mx-auto px-4 py-16 md:py-24">
+    <header className="container mx-auto px-4 py-48 md:py-60">
       <div className="text-center animate-fadeIn">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 animate-slideUp">
           Eshani Patel
