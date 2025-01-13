@@ -10,7 +10,7 @@ export function Skills() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Code className="w-8 h-8 text-purple-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3">Programming Languages</h3>
-            <ul className="text-gray-600 space-y-2">
+            <ul className="text-gray-600 space-y-2 list-disc list-inside">
               <li>Python</li>
               <li>C, C#</li>
               <li>HTML</li>
@@ -20,7 +20,7 @@ export function Skills() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <AppWindow className="w-8 h-8 text-purple-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3">Developer Tools</h3>
-            <ul className="text-gray-600 space-y-2">
+            <ul className="text-gray-600 space-y-2 list-disc list-inside">
               <li>VS Code</li>
               <li>Visual Studio</li>
               <li>Pycharm</li>
@@ -31,7 +31,7 @@ export function Skills() {
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Palette className="w-8 h-8 text-purple-500 mb-4" />
             <h3 className="text-xl font-semibold mb-3">Graphic Design Tools</h3>
-            <ul className="text-gray-600 space-y-2">
+            <ul className="text-gray-600 space-y-2 list-disc list-inside">
               <li>Procreate</li>
               <li>Figma</li>
               <li>Photoshop</li>

@@ -6,12 +6,12 @@ export function About() {
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div>
             <img
-              src="BusProfPortrait3.jpg"
+              src="busprof_portrait3.jpg"
               alt="Professional Portrait"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg w-96 h-108"
             />
           </div>
           <div>
