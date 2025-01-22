@@ -1,6 +1,10 @@
 import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 
+interface ProjectsProps {
+  setShowArtPortfolio: (show: boolean) => void;
+}
+
 const projects = [
   {
     title: 'Cross Media Design Projects',
@@ -36,7 +40,7 @@ const projects = [
   }
 ];
 
-export function Projects() {
+export function Projects({ setShowArtPortfolio }: ProjectsProps) {
   return (
     <section id="projects" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -54,12 +58,23 @@ export function Projects() {
                   className="w-full h-48 object-cover transform transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a href={project.github} className="text-white hover:text-purple-300 transition-colors">
-                    <Github className="w-6 h-6" />
-                  </a>
-                  <a href={project.live} className="text-white hover:text-purple-300 transition-colors">
-                    <ExternalLink className="w-6 h-6" />
-                  </a>
+                  {project.isArtPortfolio ? (
+                    <button
+                      onClick={() => setShowArtPortfolio(true)}
+                      className="text-white hover:text-purple-300 transition-colors px-6 py-2 border-2 border-white rounded-full"
+                    >
+                      View Gallery
+                    </button>
+                  ) : (
+                    <>
+                      <a href={project.github} className="text-white hover:text-purple-300 transition-colors">
+                        <Github className="w-6 h-6" />
+                      </a>
+                      <a href={project.live} className="text-white hover:text-purple-300 transition-colors">
+                        <ExternalLink className="w-6 h-6" />
+                      </a>
+                    </>
+                  )}
                 </div>
               </div>
               <div className="p-6">
