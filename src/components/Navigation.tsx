@@ -23,7 +23,7 @@ export function Navigation({ setShowArtPortfolio }: NavigationProps) {
         <div className="flex justify-between items-center h-16">
           <button 
             onClick={handleLogoClick}
-            className="text-xl font-bold text-purple-600 hover:text-purple-700 transition-colors"
+            className="text-3xl font-bold text-purple-600 hover:text-purple-700 transition-colors"
           >
             EP
           </button>
@@ -40,7 +40,7 @@ export function Navigation({ setShowArtPortfolio }: NavigationProps) {
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className="text-gray-600 hover:text-purple-600 transition-colors capitalize"
+                  className="text-xl text-gray-600 hover:text-purple-600 transition-colors capitalize"
                 >
                   {section}
                 </button>
