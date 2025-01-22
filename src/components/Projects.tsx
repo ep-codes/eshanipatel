@@ -8,7 +8,7 @@ const projects = [
     tech: ['Photoshop', 'Figma', 'Procreate'],
     image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800',
     github: '#',
-    live: '#'
+    live: 'ArtPortfolio.tsx'
   },
   {
     title: 'Ball Obstacle Game',
