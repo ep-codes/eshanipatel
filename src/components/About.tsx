@@ -9,7 +9,7 @@ export function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div>
             <img
-              src="busprof_portrait3.jpg"
+              src="https://github.com/ep-codes/eshanipatel/blob/main/busprof_portrait3.jpg?raw=true"
               alt="Professional Portrait"
               className="rounded-lg shadow-lg w-96 h-108"
             />
