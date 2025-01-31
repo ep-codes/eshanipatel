@@ -2,9 +2,10 @@ import React from 'react';
 
 interface NavigationProps {
   setShowArtPortfolio?: (show: boolean) => void;
+  setShowCrossMedia?: (show: boolean) => void;
 }
 
-export function Navigation({ setShowArtPortfolio }: NavigationProps) {
+export function Navigation({ setShowArtPortfolio, setShowCrossMedia }: NavigationProps) {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -12,6 +13,8 @@ export function Navigation({ setShowArtPortfolio }: NavigationProps) {
   const handleLogoClick = () => {
     if (setShowArtPortfolio) {
       setShowArtPortfolio(false);
+    } else if (setShowCrossMedia) {
+      setShowCrossMedia(false);
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -23,12 +26,12 @@ export function Navigation({ setShowArtPortfolio }: NavigationProps) {
         <div className="flex justify-between items-center h-16">
           <button 
             onClick={handleLogoClick}
-            className="text-3xl font-bold text-purple-600 hover:text-purple-700 transition-colors"
+            className="text-xl font-bold text-purple-600 hover:text-purple-700 transition-colors"
           >
             EP
           </button>
           <div className="flex gap-8">
-            {setShowArtPortfolio ? (
+            {(setShowArtPortfolio || setShowCrossMedia) ? (
               <button
                 onClick={handleLogoClick}
                 className="text-gray-600 hover:text-purple-600 transition-colors"
@@ -40,7 +43,7 @@ export function Navigation({ setShowArtPortfolio }: NavigationProps) {
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className="text-xl text-gray-600 hover:text-purple-600 transition-colors capitalize"
+                  className="text-gray-600 hover:text-purple-600 transition-colors capitalize"
                 >
                   {section}
                 </button>

@@ -3,6 +3,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 interface ProjectsProps {
   setShowArtPortfolio: (show: boolean) => void;
+  setShowCrossMedia: (show: boolean) => void;
 }
 
 const projects = [
@@ -11,14 +12,13 @@ const projects = [
     description: 'Compilation of works including a graphic design poster, concept sketing, moodboards, and contact sheets.',
     tech: ['Photoshop', 'Figma', 'Procreate'],
     image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800',
-    live: '#'
+    isCrossMedia: true
   },
   {
     title: 'Art Portfolio',
     description: 'A showcase of digital artwork and illustrations created using various mediums.',
     tech: ['Procreate', 'Pencil', 'Acrylic Paint'],
     image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800',
-    live: '#',
     isArtPortfolio: true
   },
   {
@@ -39,12 +39,12 @@ const projects = [
   }
 ];
 
-export function Projects({ setShowArtPortfolio }: ProjectsProps) {
+export function Projects({ setShowArtPortfolio, setShowCrossMedia }: ProjectsProps) {
   return (
     <section id="projects" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -64,14 +64,25 @@ export function Projects({ setShowArtPortfolio }: ProjectsProps) {
                     >
                       View Gallery
                     </button>
+                  ) : project.isCrossMedia ? (
+                    <button
+                      onClick={() => setShowCrossMedia(true)}
+                      className="text-white hover:text-purple-300 transition-colors px-6 py-2 border-2 border-white rounded-full"
+                    >
+                      View Projects
+                    </button>
                   ) : (
                     <>
-                      <a href={project.github} className="text-white hover:text-purple-300 transition-colors">
-                        <Github className="w-6 h-6" />
-                      </a>
-                      <a href={project.live} className="text-white hover:text-purple-300 transition-colors">
-                        <ExternalLink className="w-6 h-6" />
-                      </a>
+                      {project.github && (
+                        <a href={project.github} className="text-white hover:text-purple-300 transition-colors">
+                          <Github className="w-6 h-6" />
+                        </a>
+                      )}
+                      {project.live && (
+                        <a href={project.live} className="text-white hover:text-purple-300 transition-colors">
+                          <ExternalLink className="w-6 h-6" />
+                        </a>
+                      )}
                     </>
                   )}
                 </div>

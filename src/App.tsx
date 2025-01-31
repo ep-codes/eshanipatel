@@ -6,12 +6,18 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
 import { ArtPortfolio } from './components/ArtPortfolio';
+import { CrossMedia } from './components/CrossMedia';
 
 function App() {
   const [showArtPortfolio, setShowArtPortfolio] = React.useState(false);
+  const [showCrossMedia, setShowCrossMedia] = React.useState(false);
 
   if (showArtPortfolio) {
     return <ArtPortfolio setShowArtPortfolio={setShowArtPortfolio} />;
+  }
+
+  if (showCrossMedia) {
+    return <CrossMedia setShowCrossMedia={setShowCrossMedia} />;
   }
 
   return (
@@ -25,7 +31,7 @@ function App() {
         <Skills />
       </div>
       <div id="projects">
-        <Projects setShowArtPortfolio={setShowArtPortfolio} />
+        <Projects setShowArtPortfolio={setShowArtPortfolio} setShowCrossMedia={setShowCrossMedia} />
       </div>
       <Footer />
     </div>
