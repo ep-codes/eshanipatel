@@ -23,7 +23,7 @@ export function CrossMedia({ setShowCrossMedia }: CrossMediaProps) {
         <div className="bg-white rounded-lg shadow-lg p-4 mb-8">
           <div className="aspect-[16/9] w-full">
             <embed
-              src="/public/assets/pdfs/concept_sketching.pdf"
+              src="/assets/pdfs/Concept_Sketching.pdf"
               type="application/pdf"
               className="w-full h-full"
             />
