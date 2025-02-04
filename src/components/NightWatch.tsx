@@ -15,23 +15,18 @@ export function NightWatch({ setShowNightWatch }: NightWatchProps) {
           <h1 className="text-4xl font-bold text-gray-800 mb-4 animate-fadeIn">
             Night Watch
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8 animate-slideUp animation-delay-200">
-            A smart home security system app that empowers users to monitor and control their home security devices remotely.
-          </p>
         </header>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6">About the Project</h2>
           <div className="bg-white rounded-lg shadow-md p-8">
             <p className="text-gray-600 mb-6">
-              Night Watch is a comprehensive UI/UX design project focused on creating an intuitive and secure smart home security system interface. The app enables users to:
+            My first official UI/UX Design project submitted to Rice Design-a-thon 2025:
             </p>
             <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
-              <li>Monitor multiple security cameras in real-time</li>
-              <li>Receive instant notifications for any suspicious activity</li>
-              <li>Control smart locks and security systems remotely</li>
-              <li>View detailed activity logs and analytics</li>
-              <li>Share access with family members or trusted contacts</li>
+              <li>Create customizable watchlists for movies and shows they want to watch or have already seen.</li>
+              <li>Engage in community discussions through separate sections for non-spoiler and spoiler discussions, as well as full reviews.</li>
+              <li>Share bold opinions in a dedicated Hot Takes forum, where users can dive into passionate debates and unique perspectives on
+              their favorite content.</li>
             </ul>
             <p className="text-gray-600">
               The design process involved extensive user research, wireframing, prototyping, and user testing to ensure a seamless and secure experience.
@@ -39,26 +34,41 @@ export function NightWatch({ setShowNightWatch }: NightWatchProps) {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <img 
-            src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=1200" 
-            alt="Dashboard Interface"
-            className="w-full aspect-video object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            src="./assets/images/NW_SS1.png" 
+            alt="Screenshot1"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           />
           <img 
-            src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&q=80&w=1200" 
-            alt="Mobile App Screens"
-            className="w-full aspect-video object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            src="./assets/images/NW_SS2.png" 
+            alt="Screenshot2"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           />
           <img 
-            src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?auto=format&fit=crop&q=80&w=1200" 
-            alt="Security Features"
-            className="w-full aspect-video object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            src="./assets/images/NW_SS3.png" 
+            alt="Screenshot3"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           />
           <img 
-            src="https://images.unsplash.com/photo-1563461660947-507ef49e9c47?auto=format&fit=crop&q=80&w=1200" 
-            alt="Notification System"
-            className="w-full aspect-video object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            src="./assets/images/NW_SS4.png" 
+            alt="Screenshot4"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          />
+          <img 
+            src="./assets/images/NW_SS5.png" 
+            alt="Screenshot5"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          />
+          <img 
+            src="./assets/images/NW_SS6.png" 
+            alt="Screenshot6"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          />
+          <img 
+            src="./assets/images/NW_SS7.png" 
+            alt="Screenshot7"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           />
         </section>
       </main>

@@ -17,9 +17,9 @@ const projects = [
   },
   {
     title: 'Night Watch',
-    description: 'A UI/UX design project for a smart home security system app that allows users to monitor and control their home security devices remotely.',
+    description: 'An app that lets users keep track of movies and TV shows they want to watch and have already watched by creating customizable lists. These lists allow the users to give their own rating and write their own thoughts about the movie or TV show. Users are also able to participate in the comments sections for non-spoilers, spoilers, and write reviews. There is a section for hot takes where users can share opinions in the form of an online social discussion forum and share their hot takes on the movies and shows they have watched.',
     tech: ['Figma', 'UI/UX Design', 'User Research'],
-    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800',
+    image: './assets/images/NightWatch_Thumbnail.png',
     prototype: 'https://www.figma.com/proto/btMEqfwJ046m8LyNPuIZkq/Night-Watch?node-id=8-72&starting-point-node-id=8%3A72&t=niBcx1uLMibRkIuC-1',
     isUiProject: true
   },
