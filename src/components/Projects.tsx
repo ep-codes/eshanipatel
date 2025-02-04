@@ -4,6 +4,7 @@ import { Github, ExternalLink } from 'lucide-react';
 interface ProjectsProps {
   setShowArtPortfolio: (show: boolean) => void;
   setShowCrossMedia: (show: boolean) => void;
+  setShowNightWatch: (show: boolean) => void;
 }
 
 const projects = [
@@ -17,9 +18,9 @@ const projects = [
   {
     title: 'Night Watch',
     description: 'A UI/UX design project for a smart home security system app that allows users to monitor and control their home security devices remotely.',
-    tech: ['Figma', 'Adobe XD', 'Prototyping'],
+    tech: ['Figma', 'UI/UX Design', 'User Research'],
     image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800',
-    prototype: 'https://www.figma.com/proto/your-prototype-link',
+    prototype: 'https://www.figma.com/proto/btMEqfwJ046m8LyNPuIZkq/Night-Watch?node-id=8-72&starting-point-node-id=8%3A72&t=niBcx1uLMibRkIuC-1',
     isUiProject: true
   },
   {
