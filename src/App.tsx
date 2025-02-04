@@ -7,10 +7,12 @@ import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
 import { ArtPortfolio } from './components/ArtPortfolio';
 import { CrossMedia } from './components/CrossMedia';
+import { NightWatch } from './components/NightWatch';
 
 function App() {
   const [showArtPortfolio, setShowArtPortfolio] = React.useState(false);
   const [showCrossMedia, setShowCrossMedia] = React.useState(false);
+  const [showNightWatch, setShowNightWatch] = React.useState(false);
 
   if (showArtPortfolio) {
     return <ArtPortfolio setShowArtPortfolio={setShowArtPortfolio} />;
@@ -20,8 +22,12 @@ function App() {
     return <CrossMedia setShowCrossMedia={setShowCrossMedia} />;
   }
 
+  if (showNightWatch) {
+    return <NightWatch setShowNightWatch={setShowNightWatch} />;
+  }
+
   return (
-    <div className="text-xl min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 pt-16">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 pt-16">
       <Navigation />
       <Header />
       <div id="about">
@@ -31,11 +37,15 @@ function App() {
         <Skills />
       </div>
       <div id="projects">
-        <Projects setShowArtPortfolio={setShowArtPortfolio} setShowCrossMedia={setShowCrossMedia} />
+        <Projects 
+          setShowArtPortfolio={setShowArtPortfolio} 
+          setShowCrossMedia={setShowCrossMedia}
+          setShowNightWatch={setShowNightWatch}
+        />
       </div>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default App

@@ -15,6 +15,14 @@ const projects = [
     isCrossMedia: true
   },
   {
+    title: 'Night Watch',
+    description: 'A UI/UX design project for a smart home security system app that allows users to monitor and control their home security devices remotely.',
+    tech: ['Figma', 'Adobe XD', 'Prototyping'],
+    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800',
+    prototype: 'https://www.figma.com/proto/your-prototype-link',
+    isUiProject: true
+  },
+  {
     title: 'Art Portfolio',
     description: 'A showcase of digital artwork and illustrations created using various mediums.',
     tech: ['Procreate', 'Pencil', 'Acrylic Paint'],
@@ -39,7 +47,7 @@ const projects = [
   }
 ];
 
-export function Projects({ setShowArtPortfolio, setShowCrossMedia }: ProjectsProps) {
+export function Projects({ setShowArtPortfolio, setShowCrossMedia, setShowNightWatch }: ProjectsProps) {
   return (
     <section id="projects" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -71,6 +79,23 @@ export function Projects({ setShowArtPortfolio, setShowCrossMedia }: ProjectsPro
                     >
                       View Projects
                     </button>
+                  ) : project.isUiProject ? (
+                    <>
+                      <a
+                        href={project.prototype}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-purple-300 transition-colors px-6 py-2 border-2 border-white rounded-full"
+                      >
+                        View Prototype
+                      </a>
+                      <button
+                        onClick={() => setShowNightWatch(true)}
+                        className="text-white hover:text-purple-300 transition-colors px-6 py-2 border-2 border-white rounded-full"
+                      >
+                        View Project
+                      </button>
+                    </>
                   ) : (
                     <>
                       {project.github && (

@@ -3,9 +3,10 @@ import React from 'react';
 interface NavigationProps {
   setShowArtPortfolio?: (show: boolean) => void;
   setShowCrossMedia?: (show: boolean) => void;
+  setShowNightWatch?: (show: boolean) => void;
 }
 
-export function Navigation({ setShowArtPortfolio, setShowCrossMedia }: NavigationProps) {
+export function Navigation({ setShowArtPortfolio, setShowCrossMedia, setShowNightWatch }: NavigationProps) {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -15,6 +16,8 @@ export function Navigation({ setShowArtPortfolio, setShowCrossMedia }: Navigatio
       setShowArtPortfolio(false);
     } else if (setShowCrossMedia) {
       setShowCrossMedia(false);
+    } else if (setShowNightWatch) {
+      setShowNightWatch(false);
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -31,7 +34,7 @@ export function Navigation({ setShowArtPortfolio, setShowCrossMedia }: Navigatio
             EP
           </button>
           <div className="flex gap-8">
-            {(setShowArtPortfolio || setShowCrossMedia) ? (
+            {(setShowArtPortfolio || setShowCrossMedia || setShowNightWatch) ? (
               <button
                 onClick={handleLogoClick}
                 className="text-gray-600 hover:text-purple-600 transition-colors"
