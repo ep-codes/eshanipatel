@@ -5,37 +5,37 @@ const artworks = [
   {
     title: "Blue/Purple Galaxy",
     description: "",
-    image: "/assets/images/BlueGalaxy.png",
+    image: "/public/assets/images/BlueGalaxy.png",
     category: "Digital Art"
   },
   {
     title: "Blue Inverted Galaxy",
     description: "",
-    image: "/assets/images/InvertedBlueGalaxy.png",
+    image: "/public/assets/images/InvertedBlueGalaxy.png",
     category: "Digital Art"
   },
   {
     title: "Blue Sky Cherry Blossoms",
     description: "",
-    image: "/assets/images/BlueSkyCherryBlossom.png",
+    image: "/public/assets/images/BlueSkyCherryBlossom.jpg",
     category: "Painting"
   },
   {
     title: "Clip & Scrunchie",
     description: "",
-    image: "/assets/images/ClipScrunchie.png",
+    image: "/public/assets/images/ClipScrunchie.png",
     category: "Digital Art"
   },
   {
     title: "Stationary",
     description: "",
-    image: "/assets/images/Stationary.jpg",
+    image: "/public/assets/images/Stationary.jpg",
     category: "Digital Art"
   },
   {
     title: "Rose",
     description: "",
-    image: "/assets/images/rose.png",
+    image: "/public/assets/images/rose.png",
     category: "Digital Art"
   }
 ];
