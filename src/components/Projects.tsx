@@ -26,8 +26,8 @@ const projects = [
   {
     title: 'Art Portfolio',
     description: 'A showcase of digital artwork and illustrations created using various mediums.',
-    tech: ['Procreate', 'Pencil', 'Acrylic Paint'],
-    image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800',
+    tech: ['Procreate', 'Pencil', 'Acrylic Paint', "Digital Art"],
+    image: './assets/images/Rose.PNG',
     isArtPortfolio: true
   },
   {
