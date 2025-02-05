@@ -37,7 +37,37 @@ const artworks = [
     description: "",
     image: "/public/assets/images/rose.png",
     category: "Digital Art"
-  }
+  },
+  {
+    title: "Yeji - ITZY",
+    description: "",
+    image: "/public/assets/images/YejiItzy.png",
+    category: "Digital Art"
+  },
+  {
+    title: "Lia - ITZY",
+    description: "",
+    image: "/public/assets/images/LiaItzy.png",
+    category: "Digital Art"
+  },
+  {
+    title: "Ryujin - ITZY",
+    description: "",
+    image: "/public/assets/images/RyujinItzy.png",
+    category: "Digital Art"
+  },
+  {
+    title: "Chaeryeong - ITZY",
+    description: "",
+    image: "/public/assets/images/ChaeryeongItzy.png",
+    category: "Digital Art"
+  },
+  {
+    title: "Yuna - ITZY",
+    description: "",
+    image: "/public/assets/images/YunaItzy.png",
+    category: "Digital Art"
+  },
 ];
 
 interface ArtPortfolioProps {
