@@ -5,67 +5,67 @@ const artworks = [
   {
     title: "Blue/Purple Galaxy",
     description: "",
-    image: "/public/assets/images/BlueGalaxy.png",
+    image: "/assets/images/BlueGalaxy.png",
     category: "Digital Art"
   },
   {
     title: "Blue Inverted Galaxy",
     description: "",
-    image: "/public/assets/images/InvertedBlueGalaxy.png",
+    image: "/assets/images/InvertedBlueGalaxy.png",
     category: "Digital Art"
   },
   {
     title: "Blue Sky Cherry Blossoms",
     description: "",
-    image: "/public/assets/images/BlueSkyCherryBlossom.jpg",
+    image: "/assets/images/BlueSkyCherryBlossom.jpg",
     category: "Painting"
   },
   {
     title: "Clip & Scrunchie",
     description: "",
-    image: "/public/assets/images/ClipScrunchie.png",
+    image: "/assets/images/ClipScrunchie.png",
     category: "Digital Art"
   },
   {
     title: "Stationary",
     description: "",
-    image: "/public/assets/images/Stationary.jpg",
+    image: "/assets/images/Stationary.jpg",
     category: "Digital Art"
   },
   {
     title: "Rose",
     description: "",
-    image: "/public/assets/images/rose.png",
+    image: "/assets/images/rose.png",
     category: "Digital Art"
   },
   {
     title: "Yeji - ITZY",
     description: "",
-    image: "/public/assets/images/YejiItzy.png",
+    image: "/assets/images/YejiItzy.png",
     category: "Digital Art"
   },
   {
     title: "Lia - ITZY",
     description: "",
-    image: "/public/assets/images/LiaItzy.png",
+    image: "/assets/images/LiaItzy.png",
     category: "Digital Art"
   },
   {
     title: "Ryujin - ITZY",
     description: "",
-    image: "/public/assets/images/RyujinItzy.png",
+    image: "/assets/images/RyujinItzy.png",
     category: "Digital Art"
   },
   {
     title: "Chaeryeong - ITZY",
     description: "",
-    image: "/public/assets/images/ChaeryeongItzy.png",
+    image: "/assets/images/ChaeryeongItzy.png",
     category: "Digital Art"
   },
   {
     title: "Yuna - ITZY",
     description: "",
-    image: "/public/assets/images/YunaItzy.png",
+    image: "/assets/images/YunaItzy.png",
     category: "Digital Art"
   },
 ];
