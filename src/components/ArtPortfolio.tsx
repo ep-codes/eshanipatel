@@ -5,67 +5,67 @@ const artworks = [
   {
     title: "Blue/Purple Galaxy",
     description: "",
-    image: "/assets/images/BlueGalaxy.png",
+    image: "./assets/images/BlueGalaxy.PNG",
     category: "Digital Art"
   },
   {
     title: "Blue Inverted Galaxy",
     description: "",
-    image: "/assets/images/InvertedBlueGalaxy.png",
+    image: "./assets/images/InvertedBlueGalaxy.PNG",
     category: "Digital Art"
   },
   {
     title: "Blue Sky Cherry Blossoms",
     description: "",
-    image: "/assets/images/BlueSkyCherryBlossom.jpg",
+    image: "./assets/images/BlueSkyCherryBlossom.JPG",
     category: "Painting"
   },
   {
     title: "Clip & Scrunchie",
     description: "",
-    image: "/assets/images/ClipScrunchie.png",
+    image: "./assets/images/ClipScrunchie.PNG",
     category: "Digital Art"
   },
   {
     title: "Stationary",
     description: "",
-    image: "/assets/images/Stationary.jpg",
+    image: "./assets/images/Stationary.JPG",
     category: "Digital Art"
   },
   {
     title: "Rose",
     description: "",
-    image: "/assets/images/rose.png",
+    image: "./assets/images/Rose.PNG",
     category: "Digital Art"
   },
   {
     title: "Yeji - ITZY",
     description: "",
-    image: "/assets/images/YejiItzy.png",
+    image: "/assets/images/YejiItzy.PNG",
     category: "Digital Art"
   },
   {
     title: "Lia - ITZY",
     description: "",
-    image: "/assets/images/LiaItzy.png",
+    image: "/assets/images/LiaItzy.PNG",
     category: "Digital Art"
   },
   {
     title: "Ryujin - ITZY",
     description: "",
-    image: "/assets/images/RyujinItzy.png",
+    image: "/assets/images/RyujinItzy.PNG",
     category: "Digital Art"
   },
   {
     title: "Chaeryeong - ITZY",
     description: "",
-    image: "/assets/images/ChaeryeongItzy.png",
+    image: "/assets/images/ChaeryeongItzy.PNG",
     category: "Digital Art"
   },
   {
     title: "Yuna - ITZY",
     description: "",
-    image: "/assets/images/YunaItzy.png",
+    image: "/assets/images/YunaItzy.PNG",
     category: "Digital Art"
   },
 ];
