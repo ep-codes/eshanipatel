@@ -3,40 +3,40 @@ import { Navigation } from './Navigation';
 
 const artworks = [
   {
-    title: "Digital Illustration",
-    description: "Character design exploration",
-    image: "https://images.unsplash.com/photo-1615859131861-052f0641a60e?auto=format&fit=crop&q=80&w=800",
+    title: "Blue/Purple Galaxy",
+    description: "",
+    image: "./assets/images/BlueGalaxy.png",
     category: "Digital Art"
   },
   {
-    title: "Concept Art",
-    description: "Environment concept for game design",
-    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&q=80&w=800",
-    category: "Concept Art"
-  },
-  {
-    title: "Character Design",
-    description: "Original character illustration",
-    image: "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800",
+    title: "Blue Inverted Galaxy",
+    description: "",
+    image: "./assets/images/InvertedBlueGalaxy.png",
     category: "Digital Art"
   },
   {
-    title: "Landscape Study",
-    description: "Digital painting practice",
-    image: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&q=80&w=800",
+    title: "Blue Sky Cherry Blossoms",
+    description: "",
+    image: "./assets/images/BlueSkyCherryBlossom.png",
+    category: "Painting"
+  },
+  {
+    title: "Clip & Scrunchie",
+    description: "",
+    image: "./assets/images/ClipScrunchie.png",
     category: "Digital Art"
   },
   {
-    title: "UI Design",
-    description: "Game interface concept",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800",
-    category: "UI Design"
+    title: "Stationary",
+    description: "",
+    image: "./assets/images/Stationary.jpg",
+    category: "Digital Art"
   },
   {
-    title: "Animation Frame",
-    description: "Key frame from character animation",
-    image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?auto=format&fit=crop&q=80&w=800",
-    category: "Animation"
+    title: "Rose",
+    description: "",
+    image: "./assets/images/rose.png",
+    category: "Digital Art"
   }
 ];
 
