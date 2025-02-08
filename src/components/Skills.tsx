@@ -15,6 +15,8 @@ export function Skills() {
               <li>C, C#</li>
               <li>HTML</li>
               <li>CSS</li>
+              <li>SQL</li>
+              <li>R</li>
             </ul>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -35,7 +37,8 @@ export function Skills() {
               <li>Procreate</li>
               <li>Figma</li>
               <li>Photoshop</li>
-              <li>Adobe Fresco</li>
+              <li>Adobe Creative Cloud</li>
+              <li>Canva</li>
             </ul>
           </div>
         </div>
