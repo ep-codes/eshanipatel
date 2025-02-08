@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Navigation } from './Navigation';
+import { Footer } from './Footer';
 
 interface CrossMediaProps {
   setShowCrossMedia: (show: boolean) => void;
@@ -24,7 +25,7 @@ export function CrossMedia({ setShowCrossMedia }: CrossMediaProps) {
           </p>
         </header>
 
-        <div className="bg-white rounded-lg shadow-lg p-4 mb-8">
+        <div className="bg-white rounded-lg shadow-lg p-4 mb-24">
           <div className="aspect-[16/9] w-full">
             <embed
               src="/assets/pdfs/Concept_Sketching.pdf"
@@ -34,6 +35,7 @@ export function CrossMedia({ setShowCrossMedia }: CrossMediaProps) {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

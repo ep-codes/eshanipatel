@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Navigation } from './Navigation';
+import { Footer } from './Footer';
 
 interface NightWatchProps {
   setShowNightWatch: (show: boolean) => void;
@@ -37,7 +38,7 @@ export function NightWatch({ setShowNightWatch }: NightWatchProps) {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-24">
           <img 
             src="./assets/images/NW_SS1.png" 
             alt="Screenshot1"
@@ -75,6 +76,7 @@ export function NightWatch({ setShowNightWatch }: NightWatchProps) {
           />
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

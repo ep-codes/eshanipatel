@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Navigation } from './Navigation';
+import { Footer } from './Footer';
 
 const artworks = [
   {
@@ -126,7 +127,7 @@ export function ArtPortfolio({ setShowArtPortfolio }: ArtPortfolioProps) {
           </div>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {filteredArtworks.map((artwork, index) => (
             <div
               key={index}
@@ -157,6 +158,7 @@ export function ArtPortfolio({ setShowArtPortfolio }: ArtPortfolioProps) {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
