@@ -14,7 +14,7 @@ export function CrossMedia({ setShowCrossMedia }: CrossMediaProps) {
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
       <Navigation setShowCrossMedia={setShowCrossMedia} />
       
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-32">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-10 animate-fadeIn">
             Cross Media Design Projects
