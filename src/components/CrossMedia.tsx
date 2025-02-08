@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navigation } from './Navigation';
 
 interface CrossMediaProps {
@@ -6,6 +6,10 @@ interface CrossMediaProps {
 }
 
 export function CrossMedia({ setShowCrossMedia }: CrossMediaProps) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
       <Navigation setShowCrossMedia={setShowCrossMedia} />

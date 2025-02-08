@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navigation } from './Navigation';
 
 const artworks = [
@@ -77,6 +77,10 @@ interface ArtPortfolioProps {
 export function ArtPortfolio({ setShowArtPortfolio }: ArtPortfolioProps) {
   const [selectedCategory, setSelectedCategory] = React.useState<string | null>(null);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const categories = Array.from(new Set(artworks.map(art => art.category)));
   const filteredArtworks = selectedCategory
     ? artworks.filter(art => art.category === selectedCategory)
@@ -86,7 +90,7 @@ export function ArtPortfolio({ setShowArtPortfolio }: ArtPortfolioProps) {
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
       <Navigation setShowArtPortfolio={setShowArtPortfolio} />
       
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 pt-32">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-4 animate-fadeIn">
             Art Portfolio

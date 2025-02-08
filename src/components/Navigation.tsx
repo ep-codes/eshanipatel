@@ -37,7 +37,7 @@ export function Navigation({ setShowArtPortfolio, setShowCrossMedia, setShowNigh
             {(setShowArtPortfolio || setShowCrossMedia || setShowNightWatch) ? (
               <button
                 onClick={handleLogoClick}
-                className="text-gray-600 hover:text-purple-600 transition-colors"
+                className="text-xl text-gray-600 hover:text-purple-600 transition-colors"
               >
                 Back to Home
               </button>
