@@ -12,7 +12,7 @@ const projects = [
     title: 'Cross Media Design Projects',
     description: 'Compilation of works including a graphic design poster, concept sketing, moodboards, and contact sheets.',
     tech: ['Photoshop', 'Figma', 'Procreate'],
-    image: 'https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&q=80&w=800',
+    image: './assets/pdfs/Concept_Sketching.pdf',
     isCrossMedia: true
   },
   {
