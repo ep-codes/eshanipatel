@@ -50,7 +50,7 @@ export function BallGame({ setShowBallGame }: BallGameProps) {
             <div className="aspect-video w-full">
               <iframe
                 className="w-full h-full"
-                src="https://youtu.be/Px40XVm0dH4"
+                src="https://www.youtube.com/watch?v=Px40XVm0dH4"
                 title="Ball Game Gameplay"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
