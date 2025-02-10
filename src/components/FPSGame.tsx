@@ -50,7 +50,7 @@ export function FPSGame({ setShowFPSGame }: FPSGameProps) {
             <div className="aspect-video w-full">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/your-fps-game-video-id"
+                src="https://youtu.be/kDiH2ZcBc6I"
                 title="FPS Game Gameplay"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
