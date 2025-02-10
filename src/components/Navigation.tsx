@@ -46,7 +46,7 @@ export function Navigation({
             EP
           </button>
           <div className="flex gap-8">
-            {(setShowArtPortfolio || setShowCrossMedia || setShowNightWatch) ? (
+            {(setShowArtPortfolio || setShowCrossMedia || setShowNightWatch || setShowBallGame || setShowFPSGame) ? (
               <button
                 onClick={handleLogoClick}
                 className="text-xl text-gray-600 hover:text-purple-600 transition-colors"
