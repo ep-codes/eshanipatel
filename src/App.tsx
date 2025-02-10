@@ -8,11 +8,15 @@ import { Footer } from './components/Footer';
 import { ArtPortfolio } from './components/ArtPortfolio';
 import { CrossMedia } from './components/CrossMedia';
 import { NightWatch } from './components/NightWatch';
+import { BallGame } from './components/BallGame';
+import { FPSGame } from './components/FPSGame';
 
 function App() {
   const [showArtPortfolio, setShowArtPortfolio] = React.useState(false);
   const [showCrossMedia, setShowCrossMedia] = React.useState(false);
   const [showNightWatch, setShowNightWatch] = React.useState(false);
+  const [showBallGame, setShowBallGame] = React.useState(false);
+  const [showFPSGame, setShowFPSGame] = React.useState(false);
 
   if (showArtPortfolio) {
     return <ArtPortfolio setShowArtPortfolio={setShowArtPortfolio} />;
@@ -24,6 +28,14 @@ function App() {
 
   if (showNightWatch) {
     return <NightWatch setShowNightWatch={setShowNightWatch} />;
+  }
+
+  if (showBallGame) {
+    return <BallGame setShowBallGame={setShowBallGame} />;
+  }
+
+  if (showFPSGame) {
+    return <FPSGame setShowFPSGame={setShowFPSGame} />;
   }
 
   return (
@@ -41,6 +53,8 @@ function App() {
           setShowArtPortfolio={setShowArtPortfolio} 
           setShowCrossMedia={setShowCrossMedia}
           setShowNightWatch={setShowNightWatch}
+          setShowBallGame={setShowBallGame}
+          setShowFPSGame={setShowFPSGame}
         />
       </div>
       <Footer />

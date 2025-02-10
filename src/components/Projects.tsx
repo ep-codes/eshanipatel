@@ -1,10 +1,11 @@
 import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
 
 interface ProjectsProps {
   setShowArtPortfolio: (show: boolean) => void;
   setShowCrossMedia: (show: boolean) => void;
   setShowNightWatch: (show: boolean) => void;
+  setShowBallGame: (show: boolean) => void;
+  setShowFPSGame: (show: boolean) => void;
 }
 
 const projects = [
@@ -35,20 +36,24 @@ const projects = [
     description: 'A 3D game created in 3rd person view where the player must avoid obstacles to reach the end of the level. Player control is a ball as the main character.',
     tech: ['Unity', 'C#', 'Visual Studio'],
     image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800',
-    github: '#',
-    live: '#'
+    isBallGame: true
   },
   {
     title: 'First Person Shooter Game',
     description: 'A 3D shooter game handling weapons and attacking against patrolling enemy AI.',
     tech: ['Unity', 'C#', 'Visual Studio'],
     image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800',
-    github: '#',
-    live: '#'
+    isFPSGame: true
   }
 ];
 
-export function Projects({ setShowArtPortfolio, setShowCrossMedia, setShowNightWatch }: ProjectsProps) {
+export function Projects({ 
+  setShowArtPortfolio, 
+  setShowCrossMedia, 
+  setShowNightWatch,
+  setShowBallGame,
+  setShowFPSGame 
+}: ProjectsProps) {
   return (
     <section id="projects" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -97,20 +102,21 @@ export function Projects({ setShowArtPortfolio, setShowCrossMedia, setShowNightW
                         View Project
                       </button>
                     </>
-                  ) : (
-                    <>
-                      {project.github && (
-                        <a href={project.github} className="text-white hover:text-purple-300 transition-colors">
-                          <Github className="w-6 h-6" />
-                        </a>
-                      )}
-                      {project.live && (
-                        <a href={project.live} className="text-white hover:text-purple-300 transition-colors">
-                          <ExternalLink className="w-6 h-6" />
-                        </a>
-                      )}
-                    </>
-                  )}
+                  ) : project.isBallGame ? (
+                    <button
+                      onClick={() => setShowBallGame(true)}
+                      className="text-white hover:text-purple-300 transition-colors px-6 py-2 border-2 border-white rounded-full"
+                    >
+                      View Project
+                    </button>
+                  ) : project.isFPSGame ? (
+                    <button
+                      onClick={() => setShowFPSGame(true)}
+                      className="text-white hover:text-purple-300 transition-colors px-6 py-2 border-2 border-white rounded-full"
+                    >
+                      View Project
+                    </button>
+                  ) : null}
                 </div>
               </div>
               <div className="p-6">

@@ -4,9 +4,17 @@ interface NavigationProps {
   setShowArtPortfolio?: (show: boolean) => void;
   setShowCrossMedia?: (show: boolean) => void;
   setShowNightWatch?: (show: boolean) => void;
+  setShowBallGame?: (show: boolean) => void;
+  setShowFPSGame?: (show: boolean) => void;
 }
 
-export function Navigation({ setShowArtPortfolio, setShowCrossMedia, setShowNightWatch }: NavigationProps) {
+export function Navigation({ 
+  setShowArtPortfolio, 
+  setShowCrossMedia, 
+  setShowNightWatch,
+  setShowBallGame,
+  setShowFPSGame 
+}: NavigationProps) {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -18,6 +26,10 @@ export function Navigation({ setShowArtPortfolio, setShowCrossMedia, setShowNigh
       setShowCrossMedia(false);
     } else if (setShowNightWatch) {
       setShowNightWatch(false);
+    } else if (setShowBallGame) {
+      setShowBallGame(false);
+    } else if (setShowFPSGame) {
+      setShowFPSGame(false);
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
