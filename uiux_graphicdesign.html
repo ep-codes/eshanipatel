@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UI/UX and graphic design work by Eshani Patel.">
+  <title>UI/UX &amp; Graphic Design — Eshani Patel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="logo" href="index.html" aria-label="Eshani Patel home">Eshani Patel</a>
+
+        <div class="nav-center">
+          <a href="index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+              Works <span class="caret">▾</span>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="architecture.html">Architecture</a>
+              <a href="uiux_graphicdesign.html">UI/UX &amp; Graphic Design</a>
+              <a href="#web-app-development">Web &amp; App Development</a>
+              <a href="#illustrations">Illustrations</a>
+              <a href="#content-creation">Content Creation</a>
+            </div>
+          </div>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Open navigation</span>
+        </button>
+
+        <div class="mobile-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <div class="mobile-dropdown">
+            <button class="mobile-dropdown-toggle" type="button" aria-expanded="false">
+              Works <span class="caret">▾</span>
+            </button>
+            <div class="mobile-dropdown-menu">
+              <a href="architecture.html">Architecture</a>
+              <a href="uiux_graphicdesign.html">UI/UX &amp; Graphic Design</a>
+              <a href="#web-app-development">Web &amp; App Development</a>
+              <a href="#illustrations">Illustrations</a>
+              <a href="#content-creation">Content Creation</a>
+            </div>
+          </div>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h1 class="page-title soft">UI/UX &amp; Graphic Design.</h1>
+
+        <section class="project-grid uiux-grid" aria-label="UI/UX and graphic design projects">
+        
+      <article class="project-card">
+        <div class="project-image" aria-label="Project image placeholder">
+          <span class="placeholder-icon" aria-hidden="true"></span>
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Project Title</h2>
+          <p class="project-description">Description</p>
+          <span class="tag">Adobe Illustrator</span>
+        </div>
+      </article>
+    
+        
+      <article class="project-card">
+        <div class="project-image" aria-label="Project image placeholder">
+          <span class="placeholder-icon" aria-hidden="true"></span>
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Project Title</h2>
+          <p class="project-description">Description</p>
+          <span class="tag">Figma</span>
+        </div>
+      </article>
+    
+        
+      <article class="project-card">
+        <div class="project-image" aria-label="Project image placeholder">
+          <span class="placeholder-icon" aria-hidden="true"></span>
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Project Title</h2>
+          <p class="project-description">Description</p>
+          <span class="tag">Adobe Photoshop</span>
+        </div>
+      </article>
+    
+        
+      <article class="project-card">
+        <div class="project-image" aria-label="Project image placeholder">
+          <span class="placeholder-icon" aria-hidden="true"></span>
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Project Title</h2>
+          <p class="project-description">Description</p>
+          <span class="tag">Adobe Illustrator</span>
+        </div>
+      </article>
+    
+        
+      <article class="project-card">
+        <div class="project-image" aria-label="Project image placeholder">
+          <span class="placeholder-icon" aria-hidden="true"></span>
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Project Title</h2>
+          <p class="project-description">Description</p>
+          <span class="tag">Figma</span>
+        </div>
+      </article>
+    
+        </section>
+      </div>
+    </main>
+    
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 Eshani Patel</span>
+    <div>
+      <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:your-email@example.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileLinks = document.querySelector('.mobile-links');
+    const navDropdown = document.querySelector('.nav-dropdown');
+    const navDropdownToggle = document.querySelector('.nav-dropdown-toggle');
+    const mobileDropdown = document.querySelector('.mobile-dropdown');
+    const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+
+    const closeDesktopDropdown = () => {
+      navDropdown?.classList.remove('open');
+      navDropdownToggle?.setAttribute('aria-expanded', 'false');
+    };
+
+    const closeMobileDropdown = () => {
+      mobileDropdown?.classList.remove('open');
+      mobileDropdownToggle?.setAttribute('aria-expanded', 'false');
+    };
+
+    menuToggle?.addEventListener('click', () => {
+      const isOpen = mobileLinks?.classList.contains('open');
+      mobileLinks?.classList.toggle('open', !isOpen);
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    navDropdownToggle?.addEventListener('click', () => {
+      const isOpen = navDropdown.classList.contains('open');
+      navDropdown.classList.toggle('open', !isOpen);
+      navDropdownToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    mobileDropdownToggle?.addEventListener('click', () => {
+      const isOpen = mobileDropdown.classList.contains('open');
+      mobileDropdown.classList.toggle('open', !isOpen);
+      mobileDropdownToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navDropdown?.contains(event.target)) {
+        closeDesktopDropdown();
+      }
+      if (!mobileDropdown?.contains(event.target)) {
+        closeMobileDropdown();
+      }
+      if (!mobileLinks?.contains(event.target) && !menuToggle?.contains(event.target)) {
+        mobileLinks?.classList.remove('open');
+        menuToggle?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+
+  </div>
+</body>
+</html>
