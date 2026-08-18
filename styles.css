@@ -12,6 +12,7 @@
   --butter: #f6e7b4;
   --sage: #c9d8c0;
   --blue: #c5dde2;
+  --orange: #f0b896;
   --white: #fff;
   --shadow: 5px 5px 0 rgba(48, 57, 68, 0.12);
   --max: 1180px;
@@ -505,6 +506,10 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
+}
+
+.webappdev-page .project-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .filter-bar {
@@ -1176,6 +1181,10 @@ main > .container {
   gap: 26px;
 }
 
+.webappdev-page .project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .project-card {
   overflow: hidden;
   display: block;
@@ -1270,11 +1279,18 @@ main > .container {
   white-space: nowrap;
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
 .project-tag {
   display: inline-block;
   padding: 6px 12px;
   border-radius: 999px;
-  background: var(--rose);
+  background: var(--orange);
   color: var(--ink);
   font-size: 0.75rem;
   font-weight: 600;
