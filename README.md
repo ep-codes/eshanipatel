@@ -1,4 +1,4 @@
-# Eshani Patel Portfolio
+# Eshani Patel - Website Portfolio
 
 A personal portfolio website designed to showcase my work across architecture, UI/UX design, graphic design, illustration, and content creation.
 
@@ -9,11 +9,11 @@ This portfolio represents my approach to design as a multidisciplinary creative.
 The website is designed to make it easy for visitors to explore different types of work while maintaining a simple, friendly, and professional experience.
 
 ## Featured Areas
-🏛️ Architecture — Studio projects, architectural design, research, and visualization.  
-🖥️ UI/UX Design — Interfaces, digital experiences, wireframes, and prototypes.  
-🎨 Graphic Design — Branding, layouts, visual communication, and graphics.  
-✏️ Illustration — Digital and traditional artwork, including watercolor, gouache, and acrylic work.  
-📱 Content Creation — Social media content, photography, video, and creative storytelling.  
+- 🏛️ Architecture — Studio projects, architectural design, research, and visualization.  
+- 🖥️ UI/UX Design — Interfaces, digital experiences, wireframes, and prototypes.  
+- 🎨 Graphic Design — Branding, layouts, visual communication, and graphics.  
+- ✏️ Illustration — Digital and traditional artwork, including watercolor, gouache, and acrylic work.  
+- 📱 Content Creation — Social media content, photography, video, and creative storytelling.  
 
 ## Design
 
