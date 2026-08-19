@@ -10,7 +10,7 @@
   --coral: #e9afa7;
   --lav: #dcd3e8;
   --butter: #f6e7b4;
-  --sage: #c9d8c0;
+  --sage: #d9e2d1;
   --blue: #c5dde2;
   --orange: #f0b896;
   --white: #fff;
@@ -415,7 +415,7 @@ h2 {
 
 .scroll-note {
   position: absolute;
-  bottom: 25px;
+  bottom: 60px;
   left: max(24px, calc((100vw - var(--max)) / 2));
   display: flex;
   align-items: center;
@@ -633,15 +633,6 @@ h2 {
   border-radius: 18px;
   background: var(--paper);
   box-shadow: var(--shadow);
-}
-
-.skill-number {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 0.65rem;
-  color: var(--coral);
-  font-weight: 700;
 }
 
 .skill-card h3 {
@@ -1171,18 +1162,40 @@ main > .container {
   color: var(--ink);
 }
 
-.page-title.soft {
-  color: var(--muted);
+.page-title.blue {
+  color: var(--blue);
+}
+
+.page-title.sage {
+  color: var(--sage);
+}
+
+.page-title.rose {
+  color: var(--coral);
+}
+
+.page-title.lav {
+  color: var(--lav);
+}
+
+.page-title.orange {
+  color: var(--orange);
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 26px;
 }
 
+
+
 .webappdev-page .project-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.illustrations-page .project-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .project-card {
@@ -1266,7 +1279,7 @@ main > .container {
 }
 
 .project-title {
-  margin: 0;
+  margin: 8;
   font-size: 1.3rem;
   line-height: 1.15;
   font-weight: 700;
@@ -1290,8 +1303,8 @@ main > .container {
   display: inline-block;
   padding: 6px 12px;
   border-radius: 999px;
-  background: var(--orange);
-  color: var(--ink);
+  background: var(--rose);
+  color: var(--white);
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
