@@ -232,7 +232,7 @@ button {
    ================================================== */
 
 .art-gallery {
-  column-count: 3;
+  column-count: 4;
   column-gap: 22px;
 }
 
