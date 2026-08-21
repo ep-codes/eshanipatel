@@ -8,184 +8,501 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Pacifico&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles_design.css">
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="logo" href="index.html" aria-label="Eshani Patel home">Eshani Patel</a>
+      <a class="logo" href="index.html">Eshani Patel</a>
 
       <div class="nav-center">
         <a href="index.html">Home</a>
+
         <div class="nav-dropdown">
           <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
-            Works <span class="caret">▾</span>
+            Works <span>▾</span>
           </button>
+
           <div class="nav-dropdown-menu">
             <a href="architecture.html">Architecture</a>
             <a href="uiux_graphicdesign.html">UI/UX &amp; Graphic Design</a>
             <a href="WebAppDev.html">Web &amp; App Development</a>
-            <a href="illustrations.html">Illustrations</a>
+            <a class="active" href="illustrations.html">Illustrations</a>
             <a href="#content-creation">Content Creation</a>
           </div>
         </div>
+
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </div>
 
-      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
-
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-links">
         <span></span>
         <span></span>
         <span></span>
         <span class="sr-only">Open navigation</span>
       </button>
 
-      <div class="mobile-links" id="nav-links">
+      <div class="mobile-links" id="mobile-links">
         <a href="index.html">Home</a>
+
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-toggle" type="button" aria-expanded="false">
-            Works <span class="caret">▾</span>
+            Works <span>▾</span>
           </button>
+
           <div class="mobile-dropdown-menu">
             <a href="architecture.html">Architecture</a>
             <a href="uiux_graphicdesign.html">UI/UX &amp; Graphic Design</a>
             <a href="WebAppDev.html">Web &amp; App Development</a>
-            <a href="illustrations.html">Illustrations</a>
+            <a class="active" href="illustrations.html">Illustrations</a>
             <a href="#content-creation">Content Creation</a>
           </div>
         </div>
+
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main class="main">
+  <main class="illustration-page">
     <div class="container">
-      <h1 class="page-title rose">Illustrations.</h1>
 
-      <!-- Filter bar -->
-      <div class="filter-bar" aria-label="Illustration mediums">
+      <section class="gallery-intro">
+        <h1>Illustrations.</h1>
+        <p class="gallery-description">
+          A collection of digital art, traditional studies, playful experiments,
+          and visual pieces made across different mediums.
+        </p>
+      </section>
+
+      <nav class="filter-bar" aria-label="Filter illustrations">
         <button class="filter-button active" type="button" data-filter="all">All</button>
         <button class="filter-button" type="button" data-filter="digital">Digital Art</button>
         <button class="filter-button" type="button" data-filter="pencil">Pencil</button>
         <button class="filter-button" type="button" data-filter="watercolor">Watercolor</button>
         <button class="filter-button" type="button" data-filter="gouache">Gouache</button>
         <button class="filter-button" type="button" data-filter="acrylic">Acrylic</button>
-      </div>
+        <button class="filter-button" type="button" data-filter="mixed">Mixed Media</button>
+        <button class="filter-button" type="button" data-filter="minimalistvector">Minimalist Vector</button>
+        <button class="filter-button" type="button" data-filter="wallpapers">Wallpapers</button>
+        <button class="filter-button" type="button" data-filter="fanart">Fan Art</button>
+      </nav>
 
-      <section class="project-grid" aria-label="Illustration projects">
+      <!--
+        Pinterest-style gallery.
+      -->
+      <section class="art-gallery" aria-label="Illustration gallery">
+
         
-      <article class="project-card" data-medium="digital">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Waffles_&_Strawberries_.png"
+              alt="Waffles & Strawberries illustration">
+            
           </div>
-          <span class="project-tag">Digital Art</span>
-        </div>
-      </article>
-    
+
+          <div class="art-info">
+            <div>
+              <h2>Waffles & Strawberries</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
         
-      <article class="project-card" data-medium="watercolor">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Albums.png"
+              alt="Albums illustration">
+            
           </div>
-          <span class="project-tag">Watercolor</span>
-        </div>
-      </article>
-    
+
+          <div class="art-info">
+            <div>
+              <h2>Albums</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
         
-      <article class="project-card" data-medium="pencil">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Light_stick.png"
+              alt="Light Stick illustration">
+            
           </div>
-          <span class="project-tag">Pencil</span>
-        </div>
-      </article>
-    
+
+          <div class="art-info">
+            <div>
+              <h2>Light Stick</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Scrunchie_.png"
+              alt="Scrunchie illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Scrunchie</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Henna.png"
+              alt="Henna illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Henna</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
         
-      <article class="project-card" data-medium="gouache">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Wallet_Keys_Phone.png"
+              alt="Wallet, Keys, and Phone illustration">
+            
           </div>
-          <span class="project-tag">Gouache</span>
-        </div>
-      </article>
 
-      <article class="project-card" data-medium="digital">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+          <div class="art-info">
+            <div>
+              <h2>Wallet, Keys, and Phone</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
           </div>
-          <span class="project-tag">Digital Art</span>
-        </div>
-      </article>
+        </article>
 
-      <article class="project-card" data-medium="pencil">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Mini_Canvas.png"
+              alt="Mini Canvas illustration">
+            
           </div>
-          <span class="project-tag">Pencil</span>
-        </div>
-      </article>
 
-      <article class="project-card" data-medium="gouache">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+          <div class="art-info">
+            <div>
+              <h2>Mini Canvas</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
           </div>
-          <span class="project-tag">Gouache</span>
-        </div>
-      </article>
+        </article>
 
-      <article class="project-card" data-medium="watercolor">
-        <div class="project-image" aria-label="Project image placeholder">
-          <span class="placeholder-icon" aria-hidden="true"></span>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Title</h2>
-            <span class="project-year">2024</span>
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Squish.png"
+              alt="Squishmallows illustration">
+            
           </div>
-          <span class="project-tag">Watercolor</span>
-        </div>
-      </article>
-    
+
+          <div class="art-info">
+            <div>
+              <h2>Squishmallows</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Keyboard_.png"
+              alt="Keyboard illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Keyboard</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Adidas.png"
+              alt="Adidas illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Adidas</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Switch.png"
+              alt="Nintendo Switch illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Nintendo Switch</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2023</span>
+          </div>
+        </article>
+
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Rose.png"
+              alt="Rose illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Rose</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2022</span>
+          </div>
+        </article>
+
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Stationary.png"
+              alt="Stationary illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Stationary</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2022</span>
+          </div>
+        </article>
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/iPadiPhone_13_Pro.png"
+              alt="iPadiPhone 13 Pro illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>iPad / iPhone 13 Pro</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+        
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Coffee_Mug.png"
+              alt="Coffee Mug illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Coffee Mug</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/DrivewayVector.png"
+              alt="Driveway Vector illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Driveway Vector</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/BalconyView.png"
+              alt="Balcony View illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Balcony View</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Bay_Window_.png"
+              alt="Bay Window illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Bay Window</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital art minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/BlueDining.png"
+              alt="Blue Dining illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Blue Dining</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital art minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Snowy_Beach.png"
+              alt="Snowy Beach illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Snowy Beach</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital art minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Arctic_Beach.png"
+              alt="Arctic Beach illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Arctic Beach</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital art minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Mountain_Beach.png"
+              alt="Mountain Beach illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Mountain Beach</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-medium="digital minimalistvector">
+          <div class="art-preview preview-image">
+            <img
+              src="illustrations/Pink_Beach.png"
+              alt="Pink Beach illustration">
+            
+          </div>
+
+          <div class="art-info">
+            <div>
+              <h2>Pink Beach</h2>
+              <p>Digital Art · Minimalist Vector</p>
+            </div>
+            <span>2021</span>
+          </div>
+        </article>
+
+
       </section>
     </div>
   </main>
@@ -203,74 +520,54 @@
   <script>
     const menuToggle = document.querySelector('.menu-toggle');
     const mobileLinks = document.querySelector('.mobile-links');
-    const navDropdown = document.querySelector('.nav-dropdown');
-    const navDropdownToggle = document.querySelector('.nav-dropdown-toggle');
+    const desktopDropdown = document.querySelector('.nav-dropdown');
+    const desktopDropdownToggle = document.querySelector('.nav-dropdown-toggle');
     const mobileDropdown = document.querySelector('.mobile-dropdown');
     const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
 
-    const closeDesktopDropdown = () => {
-      navDropdown?.classList.remove('open');
-      navDropdownToggle?.setAttribute('aria-expanded', 'false');
-    };
-
-    const closeMobileDropdown = () => {
-      mobileDropdown?.classList.remove('open');
-      mobileDropdownToggle?.setAttribute('aria-expanded', 'false');
-    };
-
-    navDropdownToggle?.addEventListener('click', () => {
-      const isOpen = navDropdown.classList.contains('open');
-      navDropdown.classList.toggle('open', !isOpen);
-      navDropdownToggle.setAttribute('aria-expanded', String(!isOpen));
+    desktopDropdownToggle?.addEventListener('click', () => {
+      const open = desktopDropdown.classList.toggle('open');
+      desktopDropdownToggle.setAttribute('aria-expanded', open);
     });
 
     mobileDropdownToggle?.addEventListener('click', () => {
-      const isOpen = mobileDropdown.classList.contains('open');
-      mobileDropdown.classList.toggle('open', !isOpen);
-      mobileDropdownToggle.setAttribute('aria-expanded', String(!isOpen));
+      const open = mobileDropdown.classList.toggle('open');
+      mobileDropdownToggle.setAttribute('aria-expanded', open);
     });
 
     document.addEventListener('click', (event) => {
-      if (!navDropdown?.contains(event.target)) {
-        closeDesktopDropdown();
-      }
-      if (!mobileDropdown?.contains(event.target)) {
-        closeMobileDropdown();
+      if (!desktopDropdown?.contains(event.target)) {
+        desktopDropdown?.classList.remove('open');
+        desktopDropdownToggle?.setAttribute('aria-expanded', 'false');
       }
     });
 
     menuToggle?.addEventListener('click', () => {
-      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!isExpanded));
-      mobileLinks.classList.toggle('open');
+      const open = mobileLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open);
     });
 
-    mobileLinks?.querySelectorAll('a').forEach(link => {
+    mobileLinks?.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        menuToggle.setAttribute('aria-expanded', 'false');
         mobileLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
       });
     });
 
-    // Filter functionality
+    // Gallery filters
     const filterButtons = document.querySelectorAll('.filter-button');
-    const projectCards = document.querySelectorAll('.project-card');
+    const artCards = document.querySelectorAll('.art-card');
 
-    filterButtons.forEach(button => {
+    filterButtons.forEach((button) => {
       button.addEventListener('click', () => {
         const filter = button.dataset.filter;
 
-        // Update active button
-        filterButtons.forEach(btn => btn.classList.remove('active'));
+        filterButtons.forEach((item) => item.classList.remove('active'));
         button.classList.add('active');
 
-        // Filter cards
-        projectCards.forEach(card => {
-          if (filter === 'all' || card.dataset.medium === filter) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
+        artCards.forEach((card) => {
+          const mediums = card.dataset.medium.split(' ');
+          card.hidden = filter !== 'all' && !mediums.includes(filter);
         });
       });
     });
