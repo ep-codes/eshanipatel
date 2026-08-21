@@ -130,7 +130,7 @@ h2 {
   border: 0;
   background: transparent;
   color: inherit;
-  font: inherit;
+  font-family: inherit;
   cursor: pointer;
   display: flex;
   align-items: center;
