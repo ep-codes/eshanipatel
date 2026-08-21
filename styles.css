@@ -96,31 +96,28 @@ h2 {
 }
 
 .logo {
-  color: var(--coral);
   font: 1.2rem 'Pacifico', cursive;
+  color: var(--coral);
   text-decoration: none;
 }
 
 .nav-center {
   display: flex;
-  align-items: center;
   gap: 6px;
+  align-items: center;
 }
 
-.nav-center > a,
+.nav-center a,
 .nav-dropdown-toggle {
   padding: 8px 13px;
-  border: 0;
   border-radius: 999px;
-  background: transparent;
-  color: inherit;
   font-size: 0.82rem;
-  line-height: 1.2;
   text-decoration: none;
+  line-height: 1.2;
 }
 
-.nav-center > a:hover,
-.nav-center > a.active,
+.nav-center a:hover,
+.nav-center .active,
 .nav-dropdown-toggle:hover {
   background: var(--butter);
 }
@@ -130,17 +127,20 @@ h2 {
 }
 
 .nav-dropdown-toggle {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 4px;
-  cursor: pointer;
 }
 
 .nav-dropdown-menu {
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-  z-index: 20;
   display: none;
   flex-direction: column;
   min-width: 220px;
@@ -149,6 +149,7 @@ h2 {
   border-radius: 14px;
   background: var(--paper);
   box-shadow: var(--shadow);
+  z-index: 30;
 }
 
 .nav-dropdown.open .nav-dropdown-menu {
@@ -158,13 +159,22 @@ h2 {
 .nav-dropdown-menu a {
   padding: 8px 10px;
   border-radius: 10px;
-  font-size: 0.8rem;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
-.nav-dropdown-menu a:hover,
-.nav-dropdown-menu a.active {
+.nav-dropdown-menu a:hover {
   background: var(--butter);
+}
+
+.nav-cta {
+  justify-self: end;
+  padding: 9px 15px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  background: #fff;
 }
 
 .menu-toggle,
