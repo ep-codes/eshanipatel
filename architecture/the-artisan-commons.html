@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Artisan Commons — Eshani Patel portfolio project.">
+  <title>The Artisan Commons — Eshani Patel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../architecture/arch_styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="../index.html">Eshani Patel</a>
+    <div class="nav-center">
+      <a href="../index.html">Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">Works <span>▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="../architecture.html">Architecture</a>
+          <a href="../uiux_graphicdesign.html">UI/UX &amp; Graphic Design</a>
+          <a href="../WebAppDev.html">Web &amp; App Development</a>
+          <a href="../illustrations.html">Illustrations</a>
+        </div>
+      </div>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="main project-detail">
+  <a class="project-back" href="../architecture.html">← Back to Architecture</a>
+
+  <section class="project-hero">
+    <div class="project-hero-copy">
+      <p class="eyebrow">Marketplace · Community · Retail</p>
+      <h1 class="project-detail-title">The Artisan Commons</h1>
+      
+    </div>
+    <div class="project-hero-image">
+      <img src="../architecture/Rendering1.png" alt="The Artisan Commons project rendering">
+    </div>
+  </section>
+
+  <section class="project-info-grid">
+    <div>
+      <p class="eyebrow">Project overview</p>
+      <h2>About the project</h2>
+    </div>
+    <div>
+      <p>The Artisan Commons is a community-centered market hall built directly above the Decatur MARTA Station, that connects commuters, residents, and visitors. The project celebrates local artists, makers, and small businesses through flexible retail spaces, workshops, exhibitions, and community gathering areas. Designed to encourage creativity and social interaction, the market features open circulation, abundant natural daylight, and adaptable spaces for seasonal markets, performances, and public events.</p>
+      <div class="project-facts">
+        <div class="project-fact"><span>Project type</span><strong>Mixed-Use / Marketplace</strong></div>
+        <div class="project-fact"><span>Location</span><strong>Decatur, Georgia</strong></div>
+        <div class="tech-stack" aria-label="Project tools and skills"><span>Spatial Design</span><span>3D Modeling</span><span>Rendering</span></div>
+    </div>
+  </section>
+
+  <section class="project-gallery">
+    <div class="project-gallery-heading">
+      <p class="eyebrow">Selected work</p>
+      <h2>Images &amp; process</h2>
+    </div>
+    <div class="project-gallery-grid">
+      <figure class="project-gallery-item large">
+        <img src="../architecture/1B_Assemblage [Converted].pdf" alt="Primary The Artisan Commons project image">
+        <figcaption class="project-gallery-caption">Primary project view</figcaption>
+      </figure>
+      <figure class="project-gallery-item">
+        <img src="../architecture/floor2_new.pdf" alt="Additional The Artisan Commons project image">
+        <figcaption class="project-gallery-caption">Replace with a plan, section, diagram, or process image</figcaption>
+      </figure>
+      <figure class="project-gallery-item">
+        <img src="../architecture/1C_raytraced_back.jpg" alt="Additional The Artisan Commons project image">
+        <figcaption class="project-gallery-caption">Replace with another project image</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="project-pdf">
+
+  <h2>Project Drawings &amp; Presentation</h2>
+
+  <p>
+    Explore the full project documentation, drawings, plans,
+    sections, and presentation below.</p>
+
+  <div class="pdf-viewer">
+    <iframe
+      src="SummerStudio_Portfolio.pdf"
+      title="The Artisan Commons project PDF">
+    </iframe>
+  </div>
+
+  <a
+    class="project-pdf-link"
+    href="SummerStudio_Portfolio.pdf"
+    target="_blank">
+    Open PDF in new tab ↗
+  </a>
+
+</section>
+
+  <div class="project-next">
+    <a href="../architecture.html">← All architecture projects</a>
+    <a href="auburn-highland.html">Auburn Highland →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 Eshani Patel</span>
+    <div><a href="../index.html#contact">Contact</a><a href="mailto:your-email@example.com">Email</a></div>
+  </div>
+</footer>
+
+<script>
+const dropdown = document.querySelector('.nav-dropdown');
+const toggle = document.querySelector('.nav-dropdown-toggle');
+toggle?.addEventListener('click', () => {
+  const open = dropdown.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', String(open));
+});
+document.addEventListener('click', event => {
+  if (!dropdown?.contains(event.target)) {
+    dropdown?.classList.remove('open');
+    toggle?.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auburn Highland — Eshani Patel portfolio project.">
+  <title>Auburn Highland — Eshani Patel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../architecture/arch_styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="../index.html">Eshani Patel</a>
+    <div class="nav-center">
+      <a href="../index.html">Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">Works <span>▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="../architecture.html">Architecture</a>
+          <a href="../uiux_graphicdesign.html">UI/UX &amp; Graphic Design</a>
+          <a href="../WebAppDev.html">Web &amp; App Development</a>
+          <a href="../illustrations.html">Illustrations</a>
+        </div>
+      </div>
+      <a href="../index.html#resume">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="main project-detail">
+  <a class="project-back" href="../architecture.html">← Back to Architecture</a>
+
+  <section class="project-hero">
+    <div class="project-hero-copy">
+      <p class="eyebrow">Architecture · Mixed-Use Community</p>
+      <h1 class="project-detail-title">Auburn Highland</h1>
+      
+    </div>
+    <div class="project-hero-image">
+      <img src="../architecture/AuburnHighland.png" alt="Auburn Highland project rendering">
+    </div>
+  </section>
+
+  <section class="project-info-grid">
+    <div>
+      <p class="eyebrow">Project overview</p>
+      <h2>About the project</h2>
+    </div>
+    <div>
+      <p>Auburn Highlands reimagines and expands the historic 546 Auburn Avenue property into a mixed-use campus that celebrates the cultural legacy of Atlanta's Sweet Auburn neighborhood.
+The project consists of three interconnected buildings: a residential building, an institutional building, and a hybrid residential/institutional building that supports a variety of community and creative programs.
+Designed as a live-work environment, the development provides artist residences and studio spaces, fostering creativity while preserving the site's historic Victorian character.
+Flexible institutional spaces accommodate art exhibitions, workshops, community events, and educational programming, creating opportunities for collaboration and public engagement.
+</p>
+      <div class="project-facts"><div class="project-fact"><span>Project type</span><strong>Mixed-Use / Community</strong></div><div class="project-fact"><span>Location</span><strong>Sweet Auburn, Atlanta</strong></div>
+      <div class="tech-stack" aria-label="Project tools and skills"><span>Mixed-Use Design</span><span>Site Planning</span><span>3D Modeling</span><span>Rendering</span></div>
+    </div>
+  </section>
+
+  <section class="project-gallery">
+    <div class="project-gallery-heading">
+      <p class="eyebrow">Selected work</p>
+      <h2>Images &amp; process</h2>
+    </div>
+    <div class="project-gallery-grid">
+      <figure class="project-gallery-item large">
+        <img src="../architecture/AH_section.pdf" alt="Primary Auburn Highland project image">
+        <figcaption class="project-gallery-caption">Primary project view</figcaption>
+      </figure>
+      <figure class="project-gallery-item">
+        <img src="../architecture/AH_model.png" alt="Additional Auburn Highland project image">
+        <figcaption class="project-gallery-caption">Replace with a plan, section, diagram, or process image</figcaption>
+      </figure>
+      <figure class="project-gallery-item">
+        <img src="../architecture/AH_cardboard.png" alt="Additional Auburn Highland project image">
+        <figcaption class="project-gallery-caption">Replace with another project image</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="project-pdf">
+    <h2>Project Drawings &amp; Presentation</h2>
+
+  <p>
+    Explore the full project documentation, drawings, plans,
+    sections, and presentation below.</p>
+
+  <div class="pdf-viewer">
+    <iframe
+      src="AHPresentation.pdf"
+      title="The Artisan Commons project PDF">
+    </iframe>
+  </div>
+
+  <a
+    class="project-pdf-link"
+    href="AHPresentation.pdf"
+    target="_blank">
+    Open PDF in new tab ↗
+  </a>
+  </section>
+
+  <div class="project-next">
+    <a href="../architecture.html">← All architecture projects</a>
+    <a href="the-artisan-commons.html">The Artisan Commons →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 Eshani Patel</span>
+    <div><a href="../index.html#contact">Contact</a><a href="mailto:your-email@example.com">Email</a></div>
+  </div>
+</footer>
+
+<script>
+const dropdown = document.querySelector('.nav-dropdown');
+const toggle = document.querySelector('.nav-dropdown-toggle');
+toggle?.addEventListener('click', () => {
+  const open = dropdown.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', String(open));
+});
+document.addEventListener('click', event => {
+  if (!dropdown?.contains(event.target)) {
+    dropdown?.classList.remove('open');
+    toggle?.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+</body>
+</html>
