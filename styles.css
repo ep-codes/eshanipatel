@@ -664,6 +664,7 @@ h2 {
   position: relative;
   max-width: 950px;
   margin: auto;
+  --timeline-gap: 28px;
 }
 
 .timeline:before {
@@ -678,8 +679,12 @@ h2 {
 
 .timeline-item {
   position: relative;
-  width: 50%;
-  padding: 0 50px 55px;
+  width: calc(50% - var(--timeline-gap));
+  padding: 22px 26px 23px;
+  border: 1px solid var(--ink);
+  border-radius: 18px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
 }
 
 .timeline-item.left {
@@ -687,26 +692,26 @@ h2 {
 }
 
 .timeline-item.right {
-  margin-left: 50%;
+  margin-left: calc(50% + var(--timeline-gap));
 }
 
 .timeline-item:after {
   content: "";
   position: absolute;
-  top: 0;
-  width: 13px;
-  height: 13px;
+  top: 22px;
+  width: 16px;
+  height: 16px;
   border: 2px solid var(--ink);
   border-radius: 50%;
   background: var(--butter);
 }
 
 .timeline-item.left:after {
-  right: -8px;
+  right: calc(-1 * (var(--timeline-gap) + 8px));
 }
 
 .timeline-item.right:after {
-  left: -8px;
+  left: calc(-1 * (var(--timeline-gap) + 8px));
 }
 
 .timeline-content {
@@ -1109,7 +1114,7 @@ h2 {
 
   .timeline-item.left:after,
   .timeline-item.right:after {
-    left: 1px;
+    left: 0;
     right: auto;
   }
 
