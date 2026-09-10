@@ -851,7 +851,7 @@ h2 {
    FOOTER & ACCESSIBILITY
    ========================================= */
 .site-footer {
-  margin-top: 24px;
+  margin-top: 0;
   background: var(--paper);
   border-top: 1px solid #30394433;
 }
