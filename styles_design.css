@@ -159,6 +159,51 @@ button {
   padding: 88px 0 90px;
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 15px;
+  border: 1px solid #30394440;
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  background: var(--butter);
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.social-links a:nth-child(2) svg,
+.social-links a:nth-child(3) svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-links .icon-cutout {
+  fill: var(--paper);
+}
+
 .gallery-intro {
   max-width: 760px;
   margin-bottom: 46px;
@@ -451,6 +496,12 @@ button {
     padding-top: 60px;
   }
 
+  .social-links {
+    gap: 8px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+
   .gallery-intro h1 {
     font-size: clamp(4rem, 16vw, 7rem);
   }
@@ -479,6 +530,10 @@ button {
 
   .illustration-page {
     padding: 50px 0 70px;
+  }
+
+  .social-links {
+    margin-top: 20px;
   }
 
   .gallery-intro {
